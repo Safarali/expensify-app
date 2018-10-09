@@ -51,7 +51,7 @@ describe('Test Expenses Action Creators', () => {
                 type: 'ADD_EXPENSE',
                 expense: {
                     id: expect.any(String),
-                    description: 'a',
+                    description: '',
                     note: '',
                     amount: 0,
                     createdAt: 0
