@@ -12,11 +12,6 @@ store.dispatch(addExpense({description: "Rent", amount: 475, createdAt: 200}));
 store.dispatch(addExpense({description: "Phone Bill", amount: 80, createdAt: 400}));
 store.dispatch(addExpense({description: "Car payment", amount: 650, createdAt: 500}));
 store.dispatch(addExpense({description: "Internet bill", amount: 125, createdAt: 350}));
-store.dispatch(setTextFilter("bill"))
-
-setTimeout(() => {
-    store.dispatch(setTextFilter("payment"))
-}, 3000);
 
 const jsx = (
     <Provider store={store}>
