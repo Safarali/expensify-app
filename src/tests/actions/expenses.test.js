@@ -1,9 +1,9 @@
 import { addExpense, editExpense, removeExpense } from '../../actions/expenses';
 
-describe('Test Expenses Action Creators', () => {
+describe('Expenses Action Creators', () => {
 
-    describe('Remove Expense', () => {
-        test('should set up remove expense action object', () => {
+    describe('removeExpense', () => {
+        test('should set up removeExpense action object', () => {
             const action = removeExpense({ id: '123abc'});
             expect(action).toEqual({
                 type: 'REMOVE_EXPENSE',
@@ -12,8 +12,8 @@ describe('Test Expenses Action Creators', () => {
         });
     });
 
-    describe('Update Expense', () => {
-        test('should set up update expense action object', () => {
+    describe('editExpense', () => {
+        test('should set up editExpense action object', () => {
             const action = editExpense('123abc', { note: "Updated Text" });
 
             expect(action).toEqual({
@@ -26,25 +26,25 @@ describe('Test Expenses Action Creators', () => {
         });
     });
 
-    describe('Add Expense', () => {
-        test('should set up add expense action object with provided values', () => {
-            const expenseDate = {
+    describe('addExpense', () => {
+        test('should set up addExpense action object with provided values', () => {
+            const expenseData = {
                 description: 'Rent',
                 note: 'For September Rent',
                 amount: 500,
                 createdAt: 1000
             }
-            const action = (addExpense(expenseDate));
+            const action = (addExpense(expenseData));
             expect(action).toEqual({
                 type: 'ADD_EXPENSE',
                 expense: {
-                    ...expenseDate,
+                    ...expenseData,
                     id: expect.any(String)
                 }
             })
         });
 
-        test('should set up add expense action object with default values', () => {
+        test('should set up addExpense action object with default values', () => {
             const action = addExpense();
 
             expect(action).toEqual({
