@@ -7,6 +7,7 @@ import { addExpense } from './actions/expenses';
 import { setTextFilter } from './actions/filters';
 import 'normalize.css/normalize.css';
 import './styles/styles.scss';
+import 'react-dates/lib/css/_datepicker.css';
 
 store.dispatch(addExpense({description: "Rent", amount: 475, createdAt: 200}));
 store.dispatch(addExpense({description: "Phone Bill", amount: 80, createdAt: 400}));

@@ -1,3 +1,4 @@
 node_modules/
 public/bundle.js
 yarn.lock
+src/tests/components/__snapshots__
