@@ -6,7 +6,7 @@
   "scripts": {
     "build": "webpack",
     "dev-server": "webpack-dev-server",
-    "test": "jest --watch"
+    "test": "jest --config=jest.config.json"
   },
   "dependencies": {
     "babel-cli": "6.26.0",
@@ -17,16 +17,21 @@
     "babel-preset-env": "1.7.0",
     "babel-preset-react": "6.24.1",
     "css-loader": "1.0.0",
+    "enzyme": "3.7.0",
+    "enzyme-adapter-react-16": "1.6.0",
+    "enzyme-to-json": "^3.3.4",
     "jest": "23.6.0",
     "moment": "2.22.2",
     "node-sass": "4.9.3",
     "normalize.css": "8.0.0",
+    "raf": "3.4.0",
     "react": "16.4.2",
     "react-addons-shallow-compare": "15.6.2",
     "react-dates": "18.1.0",
     "react-dom": "16.4.2",
     "react-redux": "5.0.7",
     "react-router-dom": "4.3.1",
+    "react-test-renderer": "16.5.2",
     "redux": "4.0.0",
     "sass-loader": "7.1.0",
     "style-loader": "0.23.0",
