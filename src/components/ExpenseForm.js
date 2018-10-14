@@ -19,7 +19,6 @@ export default class ExpenseForm extends React.Component {
 
     onInputChange = (e) => {
         const { name, value } = e.target;
-
         this.setState(() => ({
             [name] : value
         }));
