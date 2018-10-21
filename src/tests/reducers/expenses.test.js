@@ -76,4 +76,16 @@ describe('expensesReducer', () => {
         });
     });
 
+    describe('SET_EXPENSES', () => {
+        test('should setup expenses', () => {
+            const action = {
+                type: 'SET_EXPENSES',
+                expenses
+            };
+
+            const state = expensesReducer(expenses, action);
+            expect(state).toEqual(expenses);
+        });
+    });
+
 });
