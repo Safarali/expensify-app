@@ -52,7 +52,7 @@ module.exports = (env) => {
                 'process.env.FIREBASE_MESSAGING_SENDER_ID': JSON.stringify(process.env.FIREBASE_MESSAGING_SENDER_ID),
             })
         ],
-        mode: isProduction ? 'production' : 'development',
+        mode: process.env.NODE_ENV,
         devtool: isProduction ? 'source-map' : 'inline-source-map',
         devServer: {
             contentBase: path.join(__dirname, 'public'),
