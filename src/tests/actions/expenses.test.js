@@ -4,6 +4,7 @@ import {
     startAddExpense,
     startSetExpenses,
     startRemoveExpense,
+    startEditExpense,
     addExpense,
     editExpense,
     removeExpense,
@@ -60,6 +61,29 @@ describe('Expenses Action Creators', () => {
                 updates: {
                     note: "Updated Text"
                 }
+            });
+        });
+
+        test('should update expense in database and state', (done) => {
+            const store = createMockStore({});
+            const id = expenses[0].id;
+            const updates = {
+                description: "I am updated description",
+                amount: 1945
+            };
+
+            store.dispatch(startEditExpense(id, updates)).then(() => {
+                const action = store.getActions()[0];
+                expect(action).toEqual({
+                    type: 'EDIT_EXPENSE',
+                    id,
+                    updates
+                });
+                return database.ref(`expenses/${id}`).once('value');
+            }).then((snapshot) => {
+                expect(snapshot.val().description).toBe(updates.description);
+                expect(snapshot.val().amount).toBe(updates.amount);
+                done();
             });
         });
     });
