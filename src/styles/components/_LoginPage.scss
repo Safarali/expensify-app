@@ -1,0 +1,22 @@
+.header {
+  align-items: center;
+  background-image: linear-gradient(to right bottom, rgba(151, 222, 149, 0.2), rgba(8, 194, 153, 0.2)), url('/images/hero.jpg');
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+}
+
+.header__box {
+  background: fade-out(#fff, 0.15);
+  padding: $m-size $s-size;
+  border-radius: 5px;
+  text-align: center;
+  width: 25rem;
+}
+
+.header__title {
+  color: $green-dark;
+  letter-spacing: 5px;
+}
