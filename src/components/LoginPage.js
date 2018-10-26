@@ -6,8 +6,8 @@ export const LoginPage = ({ startLogin }) => (
     <header className="header">
         <div className="header__box">
             <h1 className="header__title">Expensify App</h1>
-            <p>It's time to get your expenses under control.</p>
-            <button onClick={startLogin}>Login</button>
+            <p className="header__sub-title">It's time to get your expenses under control.</p>
+            <button className="header__btn" onClick={startLogin}>Login with Google</button>
         </div>
     </header>
 );

@@ -1,6 +1,7 @@
-// Size
+// Spacing
+$xs-size: 0.8rem;
 $s-size: 1.2rem;
-$m-size: 1.6rem;
+$m-size: 2.2rem;
 $l-size: 3.2rem;
 $xl-size: 4.8rem;
 
@@ -8,3 +9,11 @@ $xl-size: 4.8rem;
 $green-light: #97de95;
 $green-dark: #08c299;
 $gray: #63686e;
+
+// font-size
+$font-size-s: 1.2rem;
+$font-size-m: 2.2rem;
+
+button {
+  cursor: pointer;
+}

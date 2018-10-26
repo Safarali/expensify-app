@@ -10,7 +10,7 @@
 
 .header__box {
   background: fade-out(#fff, 0.15);
-  padding: $m-size $s-size;
+  padding: $m-size;
   border-radius: 5px;
   text-align: center;
   width: 25rem;
@@ -18,5 +18,11 @@
 
 .header__title {
   color: $green-dark;
+  font-size: $font-size-m;
   letter-spacing: 5px;
+  margin-bottom: $s-size;
+}
+
+.header__sub-title {
+  margin-bottom: $s-size;
 }

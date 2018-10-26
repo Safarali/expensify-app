@@ -1,0 +1,17 @@
+.header__btn {
+  color: #fff;
+  background-color: $green-dark;
+  border: none;
+  border-radius: 5px;
+  font-size: $font-size-s;
+  outline: none;
+  padding: $xs-size $xl-size;
+  transition: opacity 1.4s;
+  font-family: 'Poppins', sans-serif;
+}
+
+.header__btn:hover,
+.header__btn:active,
+.header__btn:visited {
+  opacity: 0.8;
+}
