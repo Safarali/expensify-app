@@ -1,13 +1,18 @@
-.header__btn {
+@mixin btn {
   color: #fff;
   background-color: $green-dark;
   border: none;
   border-radius: 5px;
   font-size: $font-size-s;
   outline: none;
-  padding: $xs-size $xl-size;
   transition: opacity 1.4s;
   font-family: 'Poppins', sans-serif;
+  transition: opacity 1.4s;
+}
+
+.header__btn {
+  @include btn;
+  padding: $xs-size $xl-size;
 }
 
 .header__btn:hover,
