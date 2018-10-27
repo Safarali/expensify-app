@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import numeral from 'numeral';
 import pluralize from 'pluralize';
 import { connect } from 'react-redux';
@@ -10,9 +11,14 @@ export const ExpensesSummary = ({ expensesCount, expensesTotal }) => {
     const expenseWord = pluralize('expense', expensesCount, true);
 
     return (
-        <div>
-            <h2>Viewing {expenseWord} totaling {formattedExpensesTotal}</h2>
-        </div>
+        <section className="section-summary">
+            <div className="container">
+                <h2>
+                    Viewing <span>{expenseWord}</span> totaling <span>{formattedExpensesTotal}</span>
+                </h2>
+                <Link to="/create"><button className="button button--white">Add Expense</button></Link>
+            </div>
+        </section>
     );
 };
 
