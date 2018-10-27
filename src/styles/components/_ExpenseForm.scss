@@ -1,0 +1,18 @@
+.section-form {
+  padding: $m-size 0;
+}
+.section-form__form {
+  display: flex;
+  flex-direction:column;
+
+  > * {
+    margin-bottom: $s-size;
+  }
+}
+
+
+.section-form__error {
+  color: #d63031;
+  font-size: 12px;
+  margin-bottom: $s-size;
+}

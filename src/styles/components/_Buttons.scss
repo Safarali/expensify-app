@@ -19,3 +19,14 @@
 .button:visited {
     opacity: 0.8;
 }
+
+
+.button--white {
+  background-color: $green-super-light;
+  color: $green-dark;
+  font-weight: bold;
+}
+
+.button--remove {
+  background: #d63031;
+}

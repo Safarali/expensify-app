@@ -12,7 +12,11 @@ export class AddExpensePage extends React.Component {
     render() {
         return (
             <Fragment>
-                <h1>Add Expense</h1>
+                <section className="jumbotron">
+                    <div className="container">
+                        <h2 className="jumbotron__title">Add Expense</h2>
+                    </div>
+                </section>
                 <ExpenseForm
                     onSubmit={this.onSubmit}
                 />

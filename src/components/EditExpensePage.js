@@ -18,11 +18,20 @@ export class EditExpensePage extends React.Component {
     render() {
         return (
             <Fragment>
+                <section className="jumbotron">
+                    <div className="container">
+                        <h2 className="jumbotron__title">
+                            Edit Expense
+                        </h2>
+                    </div>
+                </section>
                 <ExpenseForm
                     expense={this.props.expense}
                     onSubmit={this.onSubmit}
                 />
-                <button onClick={this.onRemove}>Remove</button>
+                <div className="container">
+                    <button className="button button--remove" onClick={this.onRemove}>Remove</button>
+                </div>
             </Fragment>
         );
     }

@@ -23,6 +23,10 @@
   border: 1px solid $green-dark !important;
   border-radius: 5px !important;
   height: 50px !important;
+
+  div {
+    background-color: #fff;
+  }
 }
 
 .DateRangePickerInput__withBorder,

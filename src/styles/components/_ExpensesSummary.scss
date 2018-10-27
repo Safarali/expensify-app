@@ -1,24 +1,10 @@
 .section-summary {
-  background-color: $green-dark;
-  color: $green-super-light;
-  padding: $m-size 0;
+  @extend .jumbotron;
+}
+.section-summary__title {
+  @extend .jumbotron__title;
 
-  h2 {
-    font-size: $font-size-s;
-    font-weight: 300;
-    letter-spacing: 1px;
-    line-height: 35px;
-    margin-bottom: $s-size;
-
-    span {
-      font-weight: bold;
-    }
+  span {
+    font-weight: bold;
   }
-
-  .button--white {
-    background-color: $green-super-light;
-    color: $green-dark;
-    font-weight: 500;
-  }
-
 }
