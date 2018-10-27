@@ -73,6 +73,7 @@ export default class ExpenseForm extends React.Component {
                         autoFocus
                         value={this.state.description}
                         onChange={this.onInputChange}
+                        className="text-input"
                     />
                     <input
                         name="amount"
@@ -80,6 +81,7 @@ export default class ExpenseForm extends React.Component {
                         placeholder="Amount"
                         value={this.state.amount}
                         onChange={this.onAmountChange}
+                        className="text-input"
                     />
                     <SingleDatePicker
                         date={this.state.createdAt}
@@ -94,8 +96,9 @@ export default class ExpenseForm extends React.Component {
                         placeholder="Add a note for your expense (optional)"
                         value={this.state.note}
                         onChange={this.onInputChange}
+                        className="textarea"
                     />
-                    <button>Add Expense</button>
+                    <button className="button">Add Expense</button>
                 </form>
             </div>
         );

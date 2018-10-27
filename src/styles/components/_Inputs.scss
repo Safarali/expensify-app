@@ -1,0 +1,33 @@
+.text-input {
+  border: 1px solid $green-dark;
+  border-radius: 5px;
+  height: 50px;
+  outline: none;
+  padding: $s-size;
+}
+
+
+.textarea {
+  @extend .text-input;
+  height: 150px;
+}
+
+
+
+// Airbnb DateRangePicker Modifier
+
+.DateRangePicker,
+.DateRangePicker_1,
+.SingleDatePicker,
+.SingleDatePicker_1 {
+  border: 1px solid $green-dark !important;
+  border-radius: 5px !important;
+  height: 50px !important;
+}
+
+.DateRangePickerInput__withBorder,
+.DateRangePickerInput__withBorder_2,
+.SingleDatePickerInput__withBorder, .SingleDatePickerInput__withBorder_2 {
+   border: none !important;
+   border-radius: 5px !important;
+ }
