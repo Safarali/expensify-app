@@ -1,22 +1,19 @@
-@mixin btn {
-  color: #fff;
-  background-color: $green-dark;
-  border: none;
-  border-radius: 5px;
-  font-size: $font-size-s;
-  outline: none;
-  transition: opacity 1.4s;
-  font-family: 'Poppins', sans-serif;
-  transition: opacity 1.4s;
+.button {
+    color: #fff;
+    cursor: pointer;
+    background-color: $green-dark;
+    border: none;
+    border-radius: 5px;
+    font-size: $font-size-s;
+    padding: $xs-size;
+    outline: none;
+    transition: opacity 1.4s;
+    font-family: 'Poppins', sans-serif;
+    transition: opacity 1.4s;
 }
 
-.header__btn {
-  @include btn;
-  padding: $xs-size $xl-size;
-}
-
-.header__btn:hover,
-.header__btn:active,
-.header__btn:visited {
-  opacity: 0.8;
+.button:hover,
+.button:active,
+.button:visited {
+    opacity: 0.8;
 }
