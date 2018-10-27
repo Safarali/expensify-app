@@ -1,16 +1,10 @@
 .section-filters__inputs {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: flex-start;
   padding: $m-size 0;
-  @media (min-width: 45rem) {
-    flex-direction: row;
-  }
 }
 
 .section-filters__inputs__item {
-  margin-bottom: $s-size;
-  @media (min-width: 45rem) {
-      margin-right: $s-size;
-  }
+  margin-right: $s-size;
 }
