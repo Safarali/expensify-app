@@ -33,7 +33,7 @@ export class ExpenseListFilters extends React.Component {
             <section className="section-filters">
                 <div className="container">
                     <div className="section-filters__inputs">
-                        <div className="section-filters__inputs__item">
+                        <div className="section-filters__inputs__item mobile">
                             <input
                                 type="text"
                                 value={this.props.filters.text}

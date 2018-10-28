@@ -6,10 +6,17 @@
   }
 
   .section-filters__inputs__item {
-    margin-right: 0;
+    margin-right: 0px;
     margin-bottom: $s-size;
   }
 
+  .section-filters__inputs__item.mobile {
+    margin-right: 0px;
+
+    .text-input {
+      width: 100%;
+    }
+  }
   .container {
     padding: 0 10px;
   }
