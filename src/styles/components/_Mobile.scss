@@ -1,0 +1,44 @@
+@media screen and (max-width: 765px) {
+
+  // Filters
+  .section-filters__inputs {
+    flex-direction: column;
+  }
+
+  .section-filters__inputs__item {
+    margin-bottom: $s-size;
+  }
+
+  .container {
+    padding: 0 10px;
+  }
+
+  // Expense List
+  .cart-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .cart_item__amount {
+    margin-bottom: $s-size;
+  }
+
+  .cart-header__title--desktop {
+    display: none;
+  }
+
+  .cart-header__title--mobile {
+    display: block;
+  }
+
+  .cart-header__amount--desktop {
+    display: none;
+  }
+
+
+.text-input.text-input__mobile {
+  padding: 0 10px;
+  background-color: #fff;
+}
+
+
+}
