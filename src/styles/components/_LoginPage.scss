@@ -8,12 +8,14 @@
   justify-content: center;
 }
 
+
 .header__box {
   background: fade-out(#fff, 0.15);
   padding: $m-size;
   border-radius: 5px;
   text-align: center;
   width: 25rem;
+  margin: $m-size;
 }
 
 .header__title {

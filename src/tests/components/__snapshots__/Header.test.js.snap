@@ -15,7 +15,7 @@ exports[`<Header /> should render Header component correctly 1`] = `
         replace={false}
         to="/dashboard"
       >
-        Expensify App
+        Expensify
       </Link>
       <button
         className="button"
